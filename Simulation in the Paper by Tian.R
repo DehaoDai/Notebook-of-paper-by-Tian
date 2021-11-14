@@ -1,4 +1,4 @@
-## Section two 
+## Section First
 # Preparation
 N = 500
 set.seed(1000) 
@@ -27,11 +27,11 @@ print(index)
 newW = W*T/2 
 lm(Y ~ newW-1)#no intercept
 
-## Section Four Simulation
+## Section 2 Simulation
 # %% [code]
 # Numerical Studies
 
-## Section 1 Continuous Responses
+## SubSection 1 Continuous Responses
 
 # For continuous responses, we generated $N$ independent Gaussian samples from a regression model.
 
@@ -264,7 +264,7 @@ boxplot(Covv3 ~ y+x, dat = data.frame(Covv3, x, y), names = c("Full", "", "New",
 boxplot(Covv4 ~ y+x, dat = data.frame(Covv4, x, y), names = c("Full", "", "New","","NewAu",""),xlab ="")
 
 # %% [code]
-# Section 2 Binary Response
+# SubSection 2 Binary Response
 
 # %% [code]
 maineffect = function(p, basic = 6){
